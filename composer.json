@@ -1,0 +1,17 @@
+{
+  "name": "creativestyle/magesuite-instant-purchase-server-side-ga",
+  "description": "Integration of instant-purchase with server-side-google-analytics module",
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MageSuite\\InstantPurchaseServerSideGa\\": ""
+    }
+  }
+}
