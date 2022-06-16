@@ -21,7 +21,7 @@ class AddInstantPurchaseOriginAsDimension
 
         $customDimensionIndex = $this->configuration->getCustomDimensionIndex();
 
-        if(!is_numeric($customDimensionIndex)) {
+        if (!is_numeric($customDimensionIndex)) {
             return $result;
         }
 

@@ -16,7 +16,8 @@ class Configuration
         $this->scopeConfig = $scopeConfig;
     }
 
-    public function getCustomDimensionIndex() {
+    public function getCustomDimensionIndex()
+    {
         return $this->scopeConfig->getValue(self::CUSTOM_DIMENSION_INDEX_XML_PATH);
     }
 }
