@@ -6,6 +6,10 @@
     "OSL-3.0",
     "AFL-3.0"
   ],
+  "require": {
+    "creativestyle/magesuite-instant-purchase": "^1.0.0",
+    "creativestyle/magesuite-server-side-google-analytics": "^1.0.0"
+  },
   "autoload": {
     "files": [
       "registration.php"

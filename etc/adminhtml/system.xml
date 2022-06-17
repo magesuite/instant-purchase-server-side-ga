@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magesuite" translate="label" sortOrder="300">
+            <label>MageSuite</label>
+        </tab>
+        <section id="server_side_google_analytics">
+            <label>Server Side Google Analytics</label>
+            <tab>magesuite</tab>
+            <resource>MageSuite_ServerSideGoogleAnalytics::configuration</resource>
+            <group id="instant_purchase" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Instant purchase origin tracking</label>
+                <field id="custom_dimension_index" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom Dimension Index</label>
+                    <comment><![CDATA[Tracking of instant purchase origin requires creation of Custom Dimension in the Google Analytics panel. After custom dimension is created please provide its associated index here.]]></comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
